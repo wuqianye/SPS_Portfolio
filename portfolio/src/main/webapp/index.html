@@ -5,8 +5,8 @@
         <title>My Portfolio</title>
         
         <link rel="stylesheet" href="style.css">
-        <!-- <script src="script.js"></script> -->
         <script src="randomString.js"></script>
+        <script src="requestTranslation.js"></script>
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     </head>
@@ -61,6 +61,16 @@
                 <p>Following is a photo of my hometown, Mawei, Fuzhou</p>
                 <a href="/images/IMG20190801172400.jpg"><img src="/images/IMG20190801172400.jpg" alt="photo of my hometown, Mawei, Fuzhou"></a>
             </div>
+
+            <textarea id="text"></textarea>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="zh">Chinese</option>
+                <option value="ja">Japanese</option>
+                <option value="es">Spanish</option>
+            </select>
+            <button onclick="requestTranslation();">Translate</button>
+            <div id="result"></div>
 
             <!-- <p>Click here to get a random message:</p>
             <button onclick="addRandomGreeting()">Hello</button>
